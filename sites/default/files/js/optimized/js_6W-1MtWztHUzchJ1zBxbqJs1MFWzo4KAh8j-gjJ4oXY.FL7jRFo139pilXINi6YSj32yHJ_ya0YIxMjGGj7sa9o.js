@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/core/themes/seven/js/responsive-details.js. */
+(function(e,a){a.behaviors.responsiveDetails={attach:function(a){var t=e(a).find('details').once('responsive-details');if(!t.length){return};var n=t.find('> summary');function r(e){if(e){t.attr('open',!0);n.attr('aria-expanded',!0);n.on('click.details-open',!1)}
+else{var a=t.find('> summary[aria-pressed!=true]').attr('aria-expanded',!1);a.parent('details').attr('open',!1);n.off('.details-open')}};function s(e){r(e.matches)};var i=window.matchMedia('(min-width:48em)');i.addListener(s);r(i.matches)}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/core/themes/seven/js/responsive-details.js. */

@@ -1,0 +1,28 @@
+# Slovak translation of Google Map Field (8.x-1.14)
+# Copyright (c) 2020 by the Slovak translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Google Map Field (8.x-1.14)\n"
+"POT-Creation-Date: 2020-07-29 11:48+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Slovak\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1)?(0):(((n>=2)&&(n<=4))?(1):2));\n"
+
+msgid "Cancel"
+msgstr "Zrušiť"
+msgid "Preview"
+msgstr "Náhľad"
+msgid "API Key"
+msgstr "API Kľúč"
+msgid "Latitude"
+msgstr "Zemepisná šírka"
+msgid "Longitude"
+msgstr "Zemepisná dĺžka"
+msgid "Clear"
+msgstr "Vyčistiť"
+msgid "Map"
+msgstr "Mapa"

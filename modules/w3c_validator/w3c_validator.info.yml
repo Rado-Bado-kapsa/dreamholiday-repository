@@ -1,0 +1,12 @@
+name: 'W3C Validator'
+type: module
+description: 'Validate pages using the W3C Markup Validator. You *must* install this module via composer `composer require drupal/w3c_validator` to get it work.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: W3C Validator
+configure: w3c_validator.overview
+
+# Information added by Drupal.org packaging script on 2020-05-28
+version: '8.x-1.4'
+project: 'w3c_validator'
+datestamp: 1590655632

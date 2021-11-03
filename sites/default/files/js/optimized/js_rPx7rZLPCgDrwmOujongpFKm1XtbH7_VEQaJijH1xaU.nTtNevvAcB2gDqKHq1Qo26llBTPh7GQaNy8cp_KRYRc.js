@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/modules/admin_toolbar/js/admin_toolbar.hoverintent.js. */
+(function(t){t(document).ready(function(){t('.toolbar-tray-horizontal li.menu-item--expanded, .toolbar-tray-horizontal ul li.menu-item--expanded .menu-item').hoverIntent({over:function(){t(this).parent().find('li').removeClass('hover-intent');t(this).addClass('hover-intent')},out:function(){t(this).removeClass('hover-intent')},timeout:250})})})(jQuery);
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/modules/admin_toolbar/js/admin_toolbar.hoverintent.js. */

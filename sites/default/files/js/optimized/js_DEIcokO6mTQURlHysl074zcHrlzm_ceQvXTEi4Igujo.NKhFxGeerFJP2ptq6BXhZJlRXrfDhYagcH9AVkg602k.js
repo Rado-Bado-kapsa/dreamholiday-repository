@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/modules/webform/js/webform.element.more.js. */
+(function(e,n){'use strict';n.behaviors.webformElementMore={attach:function(n){e(n).find('.js-webform-element-more').once('webform-element-more').each(function(n){var t=e(this),r=t.find('a').first(),a=t.find('.webform-element-more--content');r.attr({'aria-expanded':!1,'aria-controls':a.attr('id')});r.on('click',i).on('keydown',function(e){if(e.which===32||e.which===13){i(e)}});function i(e){var n=(r.attr('aria-expanded')==='true');r.attr('aria-expanded',!n);if(n){t.removeClass('is-open');a.slideUp()}
+else{t.addClass('is-open');a.slideDown()};e.preventDefault()}})}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/modules/webform/js/webform.element.more.js. */

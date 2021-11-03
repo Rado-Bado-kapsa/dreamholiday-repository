@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/modules/rules/js/rules_ui.listing.js. */
+(function(t,e){e.behaviors.rulesTableFilterByText={attach:function(e,a){var l=t('input.rules-filter-text').once('rules-filter-text'),o=t(l.attr('data-table')),r=void 0;function n(e){var a=t(e.target).val().toLowerCase();function l(e,r){var l=t(r),o=l.find('[data-drupal-selector="rules-table-filter-text-source"]'),n=o.text().toLowerCase().indexOf(a)!==-1;l.closest('tr').toggle(n)};if(a.length>=2){r.each(l)}
+else{r.show()}};if(o.length){r=o.find('tbody tr');l.on('keyup',n)}}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/modules/rules/js/rules_ui.listing.js. */

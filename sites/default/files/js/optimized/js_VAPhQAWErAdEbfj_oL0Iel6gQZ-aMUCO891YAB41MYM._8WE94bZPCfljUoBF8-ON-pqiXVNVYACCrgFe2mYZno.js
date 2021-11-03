@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/modules/webform/js/webform.behaviors.js. */
+(function(n,e){'use strict';var r=(/chrom(e|ium)/.test(window.navigator.userAgent.toLowerCase()));if(r){var a=!1;if(window.performance){var i=window.performance.getEntriesByType('navigation');if(i.length>0&&i[0].type==='back_forward'){a=!0}
+else if(window.performance.navigation&&window.performance.navigation.type===window.performance.navigation.TYPE_BACK_FORWARD){a=!0}};if(a){var o=e.attachBehaviors;e.attachBehaviors=function(e,a){setTimeout(function(e,a){o(e,a)},300)}}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/modules/webform/js/webform.behaviors.js. */

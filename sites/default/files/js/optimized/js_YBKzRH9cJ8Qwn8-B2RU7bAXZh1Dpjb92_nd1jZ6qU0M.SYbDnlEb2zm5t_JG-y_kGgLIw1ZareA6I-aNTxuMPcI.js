@@ -1,0 +1,14 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/libraries/codemirror/mode/twig/twig.js. */
+(function(e){if(typeof exports=='object'&&typeof module=='object')e(require('../../lib/codemirror'),require('../../addon/mode/multiplex'));else if(typeof define=='function'&&define.amd)define(['../../lib/codemirror','../../addon/mode/multiplex'],e);else e(CodeMirror)})(function(e){'use strict';e.defineMode('twig:inner',function(){var t=['and','as','autoescape','endautoescape','block','do','endblock','else','elseif','extends','for','endfor','embed','endembed','filter','endfilter','flush','from','if','endif','in','is','include','import','not','or','set','spaceless','endspaceless','with','endwith','trans','endtrans','blocktrans','endblocktrans','macro','endmacro','use','verbatim','endverbatim'],i=/^[+\-*&%=<>!?|~^]/,r=/^[:\[\(\{]/,e=['true','false','null','empty','defined','divisibleby','divisible by','even','odd','iterable','sameas','same as'],n=/^(\d[+\-\*\/])?\d+(\.\d+)?/;t=new RegExp('(('+t.join(')|(')+'))\\b');e=new RegExp('(('+e.join(')|(')+'))\\b');function o(o,a){var s=o.peek();if(a.incomment){if(!o.skipTo('#}')){o.skipToEnd()}
+else{o.eatWhile(/\#|}/);a.incomment=!1};return'comment'}
+else if(a.intag){if(a.operator){a.operator=!1;if(o.match(e)){return'atom'};if(o.match(n)){return'number'}};if(a.sign){a.sign=!1;if(o.match(e)){return'atom'};if(o.match(n)){return'number'}};if(a.instring){if(s==a.instring){a.instring=!1};o.next();return'string'}
+else if(s=='\''||s=='"'){a.instring=s;o.next();return'string'}
+else if(o.match(a.intag+'}')||o.eat('-')&&o.match(a.intag+'}')){a.intag=!1;return'tag'}
+else if(o.match(i)){a.operator=!0;return'operator'}
+else if(o.match(r)){a.sign=!0}
+else{if(o.eat(' ')||o.sol()){if(o.match(t)){return'keyword'};if(o.match(e)){return'atom'};if(o.match(n)){return'number'};if(o.sol()){o.next()}}
+else{o.next()}};return'variable'}
+else if(o.eat('{')){if(o.eat('#')){a.incomment=!0;if(!o.skipTo('#}')){o.skipToEnd()}
+else{o.eatWhile(/\#|}/);a.incomment=!1};return'comment'}
+else if(s=o.eat(/\{|%/)){a.intag=s;if(s=='{'){a.intag='}'};o.eat('-');return'tag'}};o.next()};return{startState:function(){return{}},token:function(e,t){return o(e,t)}}});e.defineMode('twig',function(t,n){var i=e.getMode(t,'twig:inner');if(!n||!n.base)return i;return e.multiplexingMode(e.getMode(t,n.base),{open:/\{[{#%]/,close:/[}#%]\}/,mode:i,parseDelimiters:!0})});e.defineMIME('text/x-twig','twig')});
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/libraries/codemirror/mode/twig/twig.js. */

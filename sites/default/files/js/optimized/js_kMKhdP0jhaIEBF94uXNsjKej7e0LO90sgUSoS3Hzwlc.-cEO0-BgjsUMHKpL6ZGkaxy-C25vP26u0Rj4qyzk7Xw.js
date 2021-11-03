@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/core/modules/comment/comment-entity-form.js. */
+(function(e,t){t.behaviors.commentFieldsetSummaries={attach:function(n){var i=e(n);i.find('fieldset.comment-entity-settings-form').drupalSetSummary(function(n){return t.checkPlain(e(n).find('.js-form-item-comment input:checked').next('label').text())})}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/core/modules/comment/comment-entity-form.js. */

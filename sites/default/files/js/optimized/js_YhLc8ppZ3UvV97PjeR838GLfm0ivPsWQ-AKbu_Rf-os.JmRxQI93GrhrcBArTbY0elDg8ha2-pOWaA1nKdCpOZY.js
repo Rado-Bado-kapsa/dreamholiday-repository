@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/modules/webform/js/webform.admin.off-canvas.js. */
+(function(a,e){'use strict';e.behaviors.webformOffCanvasEvents={attach:function(){a(window).once('webform-off-canvas').on({'dialog:aftercreate':function(f,n,o,t){if(e.offCanvas.isOffCanvas(o)){a(window).trigger('resize.tabs')}},'dialog:afterclose':function(f,n,o,t){if(e.offCanvas.isOffCanvas(o)){a(window).trigger('resize.tabs')}}})}};a(document.body).append('<style id="ckeditor-off-canvas-reset"></style>')})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/modules/webform/js/webform.admin.off-canvas.js. */

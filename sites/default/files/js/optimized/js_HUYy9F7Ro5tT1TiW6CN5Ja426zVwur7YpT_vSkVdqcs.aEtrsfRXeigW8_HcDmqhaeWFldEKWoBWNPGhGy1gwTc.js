@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/core/modules/filter/filter.js. */
+(function(e,i){i.behaviors.filterGuidelines={attach:function(i){function r(i){var r=e(i.target),t=r.val();r.closest('.js-filter-wrapper').find('[data-drupal-format-id]').hide().filter('[data-drupal-format-id="'+t+'"]').show()};e(i).find('.js-filter-guidelines').once('filter-guidelines').find(':header').hide().closest('.js-filter-wrapper').find('select.js-filter-list').on('change.filterGuidelines',r).trigger('change.filterGuidelines')}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/core/modules/filter/filter.js. */

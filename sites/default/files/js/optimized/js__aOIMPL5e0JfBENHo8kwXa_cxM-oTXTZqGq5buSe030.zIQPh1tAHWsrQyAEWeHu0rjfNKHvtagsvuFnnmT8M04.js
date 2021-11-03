@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://www.dreamholiday.space/modules/webform/js/webform.help.js. */
+(function(o,i){'use strict';i.behaviors.webformHelpDialog={attach:function(i){o(i).find('.button-webform-play').once('webform-help-dialog').on('click',function(i){if(o(window).width()<768){i.stopImmediatePropagation()}}).each(function(){var i=o._data(this,'events')['click'],t=i.pop();i.splice(0,0,t)})}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at https://www.dreamholiday.space/modules/webform/js/webform.help.js. */
